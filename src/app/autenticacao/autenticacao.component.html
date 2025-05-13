@@ -1,0 +1,13 @@
+<form [formGroup]="autenticarForm" [hidden]="esconderCadastro">
+  <div>
+    <label for="usuario">Usuario:</label>
+    <input id="usuario" type="text" formControlName="usuario">
+  </div>
+  <div>
+    <label for="senha">Senha:</label>
+    <input id="senha" type="text" formControlName="senha">
+  </div>
+  <button type="button" (click)="onAutenticar()">Autenticar</button>
+</form>
+
+<p [hidden]="exibeResposta">{{resposta}}</p>
